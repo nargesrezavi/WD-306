@@ -1,0 +1,44 @@
+.smart {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: $bg_gray;
+
+
+    @media(min-width: 768px) {
+        position: relative;
+        height: 350px;
+
+    }
+}
+
+.smart__desc {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 500px;
+    text-align: center;
+
+    @media(min-width: 768px) {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+.smart__image {
+    width: 500px;
+    height: 500px;
+    margin-top: 20px;
+
+    @media(min-width: 768px) {
+        position: absolute;
+        top: -90px;
+        left: 100px;
+
+    }
+
+}

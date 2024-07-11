@@ -1,0 +1,424 @@
+.header__second {
+    width: 100%;
+    height: 50px;
+    background-color: #3f3f3f;
+    display: flex;
+}
+
+.header__second__width {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    @include flexBetween(space-between, center);
+
+}
+
+.header__second__items {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+
+}
+
+
+.header__second__burgerbox {
+    position: relative;
+
+    @media(min-width:768px) {
+        display: none;
+    }
+}
+
+.header__second__burgerbox img {
+    width: 40px;
+}
+
+.header__second__burgerdrop {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+
+}
+
+.header__second__burgerdroplist {
+    width: 200px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    color: white;
+}
+
+.header__second__burgerbox:hover .header__second__burgerdrop {
+    display: block;
+    width: 200px;
+    height: 600px;
+}
+
+.header__second__burgerbox:hover .header__second__burgerdroplist {
+    display: block;
+    width: 200px;
+    height: 600px;
+    background: $bg-color;
+
+}
+
+
+// Start :: styles od header second right
+
+.header__second__right {
+    display: flex;
+    align-items: center;
+    width: 300px;
+
+    @media(min-width:768px) {
+        width: 530px;
+    }
+
+    justify-content: space-between;
+}
+
+
+.header__second__right__input {
+    width: 250px;
+
+    @media(min-width:768px) {
+        width: 400px;
+    }
+
+    background-color: rgb(80, 77, 77);
+    border: 1px rgb(80, 77, 77);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header__second__right__input1 {
+    width: 200px;
+
+    @media(min-width:768px) {
+        width: 500px;
+    }
+
+    height: 30px;
+    background-color: rgb(80, 77, 77);
+    border-top-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-radius: 20px;
+    color: white;
+
+}
+
+.header__second__right__input1::placeholder {
+    color: white;
+    word-spacing: 2px;
+
+}
+
+.header__second__right__input1:hover {
+    background-color: white;
+
+}
+
+.header__second__right__input1:hover::placeholder {
+    color: black;
+
+}
+
+// Start:: drop list camera */
+
+.camera {
+    position: relative;
+}
+
+.dropcamera {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: transparent;
+}
+
+
+.droplistcamera {
+    list-style-type: none;
+    text-align: center;
+    width: 200px;
+    height: 180px;
+    border: 1px solid black;
+    background-color: white;
+    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.camera:hover .dropcamera {
+    display: block;
+}
+
+// End:: drop list camera */
+
+
+// Start::drop list for items in second Navbar
+// Start::drrop list fo all sofas 
+.allsofas {
+    position: relative;
+
+    @media(max-width:768px) {
+        display: none;
+    }
+}
+
+.dropallsofas {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 700px;
+    height: 300px;
+    background: transparent;
+    background: linear-gradient(to bottom, rgb(251, 169, 17), rgb(235, 144, 54));
+}
+
+.droplistallsofas {
+    display: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 20px;
+    flex: 1;
+
+}
+
+.droplistallsofas li {
+    list-style-type: none;
+}
+
+.divdropallsofa {
+    display: flex;
+}
+
+.divdropallsofa img {
+    flex: 2;
+    width: 200px;
+    height: 300px;
+}
+
+.allsofas:hover .dropallsofas {
+    display: block;
+}
+
+// End::drrop list fo all sofas 
+
+/* Start:: fabric drop list.. */
+
+.fabricsofas {
+    position: relative;
+
+    @media(max-width:768px) {
+        display: none;
+    }
+}
+
+.dropfabricsofas {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 700px;
+    height: 300px;
+    background: transparent;
+    background: linear-gradient(to bottom, rgb(251, 169, 17), rgb(235, 144, 54));
+}
+
+
+.droplistfabricsofas {
+    width: 500px;
+    height: 300px;
+    display: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 20px;
+    flex: 1;
+
+}
+
+.droplistfabricsofas li {
+    list-style-type: none;
+}
+
+.divdroplistfabric img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    flex: 2;
+}
+
+.divdroplistfabric {
+    display: flex;
+}
+
+
+
+.fabricsofas:hover .dropfabricsofas {
+    display: block;
+}
+
+/*Start::leather drop list..... */
+
+.leathersofas {
+    position: relative;
+
+    @media(max-width:768px) {
+        display: none;
+    }
+}
+
+.dropleathersofas {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 700px;
+    height: 300px;
+    background: transparent;
+    background: linear-gradient(to bottom, rgb(251, 169, 17), rgb(235, 144, 54));
+}
+
+.droplistleathersofas {
+    display: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 20px;
+    flex: 1;
+
+}
+
+.droplistleathersofas li {
+    list-style-type: none;
+}
+
+.divdroplistleather {
+    display: flex;
+}
+
+.divdroplistleather img {
+    flex: 2;
+    width: 200px;
+    height: 300px;
+
+}
+
+.leathersofas:hover .dropleathersofas {
+    display: block;
+}
+
+/* Start::corner drop list......... */
+.cornersofas {
+    position: relative;
+
+    @media(max-width:768px) {
+        display: none;
+    }
+}
+
+.dropcornersofas {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 700px;
+    height: 300px;
+    background: transparent;
+    background: linear-gradient(to bottom, rgb(251, 169, 17), rgb(235, 144, 54));
+}
+
+.droplistcornersofas {
+    display: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 20px;
+    flex: 1;
+
+
+}
+
+.droplistcornersofas li {
+    list-style-type: none;
+}
+
+.divdropcorner {
+    display: flex;
+}
+
+.divdropcorner img {
+    flex: 2;
+    width: 200px;
+    height: 300px;
+}
+
+.cornersofas:hover .dropcornersofas {
+    display: block;
+}
+
+/* Start::recliner drop list.... */
+.reclinersofas {
+    position: relative;
+
+    @media(max-width:768px) {
+        display: none;
+    }
+}
+
+.dropreclinersofas {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 700px;
+    height: 300px;
+    background: transparent;
+    background: linear-gradient(to bottom, rgb(251, 169, 17), rgb(235, 144, 54));
+}
+
+.droplistreclinersofas {
+    display: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 20px;
+    flex: 1;
+
+}
+
+.droplistreclinersofas li {
+    list-style-type: none;
+}
+
+.divdroprecliner {
+    display: flex;
+
+}
+
+.divdroprecliner img {
+    flex: 2;
+    width: 200px;
+    height: 300px;
+}
+
+
+.reclinersofas:hover .dropreclinersofas {
+    display: block;
+}
+
+/* End::drop list */

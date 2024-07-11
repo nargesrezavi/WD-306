@@ -1,0 +1,31 @@
+.header__first {
+    width: 100%;
+    height: 70px;
+    background-color: #000000;
+    color: white;
+    @include flexBetween(space-between, center);
+}
+
+.header__first__width {
+    width: 100%;
+
+    margin: 0 auto;
+    @include flexBetween(space-between, center);
+    max-width: 768px;
+
+    @media (min-width:768px) {
+        max-width: 1200px;
+    }
+}
+
+.header__first__left,
+.hedaer__first__center,
+.header__first__right {
+    width: 80px;
+
+    @media(min-width: 768px) {
+        width: 150px;
+    }
+
+    @include flexBetween(space-between, center);
+}
