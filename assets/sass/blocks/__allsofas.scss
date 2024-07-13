@@ -16,10 +16,17 @@ button {
 .main__container {
     width: 100%;
     max-width: 1280px;
-    margin: 0 auto;
+    margin: 20px auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr;
     gap: 1rem;
+
+    @media (min-width:768px) {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+
+
 }
 
 .card__container {
@@ -29,6 +36,11 @@ button {
 
 img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
+
+    @media (min-width:768px) {
+        width: 100%;
+        object-fit: cover;
+    }
 }
