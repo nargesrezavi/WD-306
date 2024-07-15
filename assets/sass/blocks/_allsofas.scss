@@ -1,0 +1,109 @@
+.top__section {
+    @include whb(100%, 400px, $bg_gray);
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.top__section__paragraph {
+    margin-top: 30px;
+}
+
+
+
+.top__section__btn {
+    @include flexBetween(center, center);
+
+    @media (min-width:768px) {
+        gap: 3rem;
+        padding: 20px 40px;
+        border-radius: 25px;
+        margin: 40px 20px;
+    }
+}
+
+.top__section__btn button {
+    padding: 10px 10px;
+    border-radius: 15px;
+    margin: 10px 10px;
+    font-family: Tiem;
+    background-color: $bg-color;
+
+
+    @media (min-width:768px) {
+        padding: 10px 40px;
+        border-radius: 25px;
+        margin: 20px 20px;
+        font-size: 20px;
+        background-color: $bg-color;
+    }
+
+
+}
+
+
+// start::cards
+
+.main__container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    @media (min-width:768px) {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+
+
+}
+
+.card__container {
+    width: 100%;
+
+}
+
+.card__container img {
+    object-fit: contain;
+    @include whb(100%, 250px, transparent);
+
+    @media (min-width:768px) {
+        width: 100%;
+        object-fit: contain;
+
+    }
+}
+
+
+
+
+.card__title {
+    @include flexBetween(space-around, center);
+    padding-bottom: 10px;
+
+    @media (min-width:768px) {
+        justify-content: space-between;
+    }
+}
+
+.card__title a {
+    color: black;
+}
+
+.card__desc__details {
+    @include flexBetween(flex-start, center);
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: small;
+    padding-bottom: 20px;
+
+    @media (min-width:768px) {
+        justify-content: flex-start;
+    }
+}
+
+.card__desc__price {
+    text-align: center;
+}

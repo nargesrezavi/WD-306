@@ -5,20 +5,22 @@ footer {
     margin: 0 auto;
     background-color: rgb(41, 35, 35);
     margin-top: 10px;
+    color: white;
 }
 
 .footer__container {
     display: flex;
     text-align: center;
+    color: white;
 
     @media(min-width: 768px) {
         justify-content: space-around;
-
+        color: white;
         gap: 20px;
     }
 }
 
-li {
+.footer__section li {
     list-style-type: none;
     color: white;
 }
@@ -26,14 +28,18 @@ li {
 .footer__section {
     text-align: center;
     margin-top: 20px;
+    color: white;
+    font-size: small;
 }
 
 .footer__section span {
+    color: white;
 
     border-bottom: solid white 2px;
 
     @media(min-width: 768px) {
         margin: 10px 10px;
+        color: white;
     }
 
 
@@ -58,16 +64,19 @@ li {
         margin-top: 150px;
         margin-left: 60px;
         font-size: large;
+        color: white;
     }
 }
 
 .follow__us i {
 
+    color: white;
 
     @media(min-width: 768px) {
         margin-left: 30px;
         margin-right: 10px;
         font-size: xx-large;
+        color: white;
     }
 
 }

@@ -15,28 +15,28 @@
 }
 
 .smart__desc {
-
-    display: flex;
+    @include flexBetween(left, center);
     flex-direction: column;
-    justify-content: left;
     width: 500px;
     text-align: center;
+    font-family: Tiem;
 
     @media(min-width: 768px) {
         position: absolute;
         top: 20px;
         right: 20px;
+        font-size: 20px;
+
     }
 }
 
 .smart__image {
-    width: 500px;
-    height: 500px;
+    @include whb(300px, 300px, transparent);
     margin-top: 20px;
 
     @media(min-width: 768px) {
         position: absolute;
-        top: -90px;
+        top: -10px;
         left: 100px;
 
     }

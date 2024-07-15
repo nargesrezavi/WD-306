@@ -3,6 +3,8 @@
     height: 50px;
     background-color: #3f3f3f;
     display: flex;
+
+
 }
 
 .header__second__width {
@@ -11,6 +13,9 @@
     margin: 0 auto;
     color: white;
     @include flexBetween(space-between, center);
+    font-family: Tiem;
+    font-size: 20px;
+
 
 }
 
@@ -18,9 +23,13 @@
     display: flex;
     gap: 25px;
     align-items: center;
+    font-family: Tiem;
 
 }
 
+.allsofas a {
+    font-family: Tiem;
+}
 
 .header__second__burgerbox {
     position: relative;
@@ -118,6 +127,13 @@
 .header__second__right__input1::placeholder {
     color: white;
     word-spacing: 2px;
+    font-family: Tiem;
+    font-size: 10px;
+
+    @media(min-width: 768px) {
+        font-size: 20px;
+    }
+
 
 }
 
@@ -181,10 +197,8 @@
     top: 100%;
     left: 0;
     display: none;
-    width: 700px;
-    height: 300px;
-    background: transparent;
-    background: linear-gradient(to bottom, rgb(251, 169, 17), rgb(235, 144, 54));
+    @include whb(700px, 400px, $bg-color);
+
 }
 
 .droplistallsofas {
@@ -232,16 +246,13 @@
     top: 100%;
     left: 0;
     display: none;
-    width: 700px;
-    height: 300px;
+    @include whb(700px, 400px, $bg-color);
     background: transparent;
-    background: linear-gradient(to bottom, rgb(251, 169, 17), rgb(235, 144, 54));
+    background: $bg-color;
 }
 
-
 .droplistfabricsofas {
-    width: 500px;
-    height: 300px;
+    @include whb(500px, 400px, $bg-color);
     display: none;
     display: flex;
     flex-direction: column;
@@ -284,13 +295,10 @@
 
 .dropleathersofas {
     position: absolute;
+    @include whb(700px, 400px, $bg-color);
     top: 100%;
     left: 0;
     display: none;
-    width: 700px;
-    height: 300px;
-    background: transparent;
-    background: linear-gradient(to bottom, rgb(251, 169, 17), rgb(235, 144, 54));
 }
 
 .droplistleathersofas {
@@ -300,6 +308,7 @@
     padding-left: 20px;
     padding-top: 20px;
     flex: 1;
+    @include whb(500px, 300px, $bg-color);
 
 }
 
@@ -336,10 +345,8 @@
     top: 100%;
     left: 0;
     display: none;
-    width: 700px;
-    height: 300px;
-    background: transparent;
-    background: linear-gradient(to bottom, rgb(251, 169, 17), rgb(235, 144, 54));
+    @include whb(700px, 400px, $bg-color);
+
 }
 
 .droplistcornersofas {
@@ -385,10 +392,8 @@
     top: 100%;
     left: 0;
     display: none;
-    width: 700px;
-    height: 300px;
-    background: transparent;
-    background: linear-gradient(to bottom, rgb(251, 169, 17), rgb(235, 144, 54));
+    @include whb(700px, 400px, $bg-color);
+
 }
 
 .droplistreclinersofas {

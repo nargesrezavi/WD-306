@@ -14,19 +14,19 @@
     }
 }
 
-img {
+.sizes__card img {
     width: 100%;
 
 }
 
-h1 {
-    text-align: center;
+// .sizes__card h1 {
+//     text-align: center;
 
 
-    @media (min-width:768px) {
-        margin-top: 40px;
-    }
-}
+//     @media (min-width:768px) {
+//         margin-top: 40px;
+//     }
+// }
 
 
 .sizes__card {
@@ -35,7 +35,7 @@ h1 {
     border: 1px solid gray;
 }
 
-span {
+.sizes__card span {
     font-size: larger;
     text-align: center;
 }
