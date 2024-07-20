@@ -25,7 +25,7 @@
 }
 
 .main__stack {
-    @include flexBetween(space-between, center);
+    @include flexBetween(space-around, center);
     flex-direction: column;
 
     @media(min-width:768px) {
@@ -36,9 +36,16 @@
 }
 
 .help__stack img {
-    max-width: 300px;
-    height: 400px;
-    object-fit: contain;
+    max-width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin-left: 40px;
+    margin-top: 60px;
+
+    @media (min-width:768px) {
+        max-width: 400px;
+        height: 500px;
+    }
 }
 
 .help__stack {
@@ -47,15 +54,16 @@
     max-width: 1280px;
     flex-direction: column;
     gap: 0.5rem;
-    height: 400px;
+    height: 600px;
 
     @media(min-width: 768px) {
         flex-direction: row;
-        height: 500px;
+
     }
 }
 
 .help__paragraph p {
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+    margin-right: 10px;
     font-size: large;
 }

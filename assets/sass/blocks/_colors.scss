@@ -1,12 +1,11 @@
 .colors {
-
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     background-color: $bg_gray;
-
+    padding: auto 10px;
 
     @media(min-width:768px) {
 
@@ -25,8 +24,8 @@
     @include whb(100px, 100px, transparent);
 }
 
-h1 {
+.main__colors h1 {
     text-align: center;
-    // margin-top: 840px;
+    margin-top: 30px;
 
 }

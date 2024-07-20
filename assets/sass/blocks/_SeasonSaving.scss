@@ -2,19 +2,21 @@
     width: 100%;
     height: 50px;
     background-color: white;
-    margin-top: 400px;
+    margin: 500px auto 300px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: Tiem;
-    margin-bottom: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+
 
     @media (min-width:768px) {
-        margin-top: 20px;
+        margin: 20px auto 110px auto;
     }
 }
 
-
+h1 {
+    text-align: center;
+}
 
 .season h3 {
 
@@ -30,25 +32,24 @@
     margin-bottom: 100px;
     font-size: 30px;
     text-align: center;
-    font-family: Tiem;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
 // Start cards
 
+
 .season__cards {
     width: 100%;
     height: 400px;
-    margin-top: 100px;
     @include flexBetween(center, center);
     flex-wrap: wrap;
-    margin-bottom: 1300px;
-
+    margin-bottom: 100px auto 1360px auto;
 
     @media (min-width:768px) {
         flex-wrap: nowrap;
         gap: 30px;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
 }
 
@@ -71,4 +72,21 @@
         width: 250px;
 
     }
+}
+
+
+
+.card__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.card__container button {
+    @include whb(300px, 40px, $bg-color);
+    font-size: large;
+    justify-content: center;
+    margin-bottom: 10px;
+
 }

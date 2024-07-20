@@ -80,7 +80,7 @@
 
 
 .card__title {
-    @include flexBetween(space-around, center);
+    @include flexBetween(center, center);
     padding-bottom: 10px;
 
     @media (min-width:768px) {
@@ -92,18 +92,33 @@
     color: black;
 }
 
+.title__fav {
+    padding-left: 10px;
+}
+
 .card__desc__details {
-    @include flexBetween(flex-start, center);
-    flex-direction: column;
-    flex-wrap: wrap;
+    @include flexBetween(center, center);
+    // flex-direction: row;
+    // flex-wrap: wrap;
     font-size: small;
     padding-bottom: 20px;
 
+
     @media (min-width:768px) {
-        justify-content: flex-start;
+        justify-content: space-between;
     }
 }
 
+
 .card__desc__price {
     text-align: center;
+
+    @media (min-width:768px) {
+        text-align: left;
+    }
+}
+
+.card__desc__details span i {
+    padding-right: 5px;
+    padding-left: 5px;
 }
