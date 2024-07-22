@@ -1,5 +1,7 @@
 .header__first {
     width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
     height: 70px;
     background-color: #000000;
     color: white;
@@ -8,8 +10,9 @@
 
 .header__first__width {
     width: 100%;
-
+    max-width: 1280px;
     margin: 0 auto;
+
     @include flexBetween(space-between, center);
     max-width: 768px;
 

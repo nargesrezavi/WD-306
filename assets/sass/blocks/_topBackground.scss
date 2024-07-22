@@ -2,12 +2,16 @@
 
 .topbackground {
     width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
     height: 600px;
 
 }
 
 .topstack {
     width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column-reverse;
     gap: 0;
