@@ -6,7 +6,6 @@
     background-color: #3f3f3f;
     display: flex;
 
-
 }
 
 .header__second__width {
@@ -15,17 +14,15 @@
     margin: 0 auto;
     color: white;
     @include flexBetween(space-between, center);
-    font-family: Tiem;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-
-
 }
 
 .header__second__items {
     display: flex;
     gap: 25px;
     align-items: center;
-    font-family: Tiem;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 

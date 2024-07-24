@@ -1,4 +1,7 @@
 .top__section {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
     @include whb(100%, 400px, $bg_gray);
     text-align: center;
     padding-top: 20px;
@@ -98,8 +101,6 @@
 
 .card__desc__details {
     @include flexBetween(center, center);
-    // flex-direction: row;
-    // flex-wrap: wrap;
     font-size: small;
     padding-bottom: 20px;
 
